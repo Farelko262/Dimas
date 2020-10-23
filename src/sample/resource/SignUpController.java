@@ -2,6 +2,8 @@ package sample;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import com.sun.javafx.menu.MenuItemBase;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -10,7 +12,7 @@ import javafx.scene.layout.AnchorPane;
 import sample.resource.DatabaseHandler;
 import sample.resource.User;
 
-public class SingUpController {
+public class SignUpController {
 
     @FXML
     private ResourceBundle resources;
@@ -50,11 +52,12 @@ public class SingUpController {
 
     @FXML
     private TextField signUpCuntry;
+    private MenuItemBase signUpButton;
 
     @FXML
     void initialize() {
 
-        singUpButton.setOnAction(event -> {
+        signUpButton.setOnAction(event -> {
 
             signUpNewUser();
 

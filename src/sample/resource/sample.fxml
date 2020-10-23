@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Дщз" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.resource.Controller">
+    <children>
+        <AnchorPane fx:id="authTanya" layoutY="94.0" prefHeight="310.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <TextField fx:id="login_field" layoutX="265.0" layoutY="97.0" prefHeight="25.0" prefWidth="204.0" promptText="login" />
+                <TextField fx:id="password_field" layoutX="265.0" layoutY="143.0" prefHeight="25.0" prefWidth="204.0" promptText="password" />
+                <Button fx:id="authSigInButton" layoutX="300.0" layoutY="200.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="135.0" style="-fx-background-color: #F39C63;" text="войти">
+                    <font>
+                        <Font name="Arial Narrow" size="16.0" />
+                    </font>
+                </Button>
+            <Label alignment="CENTER" layoutX="283.0" layoutY="48.0" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #F39C63;" text="Авторизация" textAlignment="CENTER" textFill="#141414" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="333.0" layoutY="265.0" prefHeight="25.0" prefWidth="70.0" text="© Dmits">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image" fitHeight="129.0" fitWidth="135.0" layoutX="60.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/iconfinder_Programming_Development_keywords_1743798.png" />
+               </image></ImageView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="265.0" layoutY="14.0" text="Analytics" textFill="#ebe7e7" textOverrun="CENTER_WORD_ELLIPSIS">
+            <font>
+                <Font name="Lucida Sans Unicode" size="50.0" />
+            </font>
+        </Label>
+      <Button fx:id="loginSigInUpButton" layoutX="504.0" layoutY="38.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #F39C63;" text="Зарегистрироваться">
+         <font>
+            <Font name="Arial Narrow" size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
